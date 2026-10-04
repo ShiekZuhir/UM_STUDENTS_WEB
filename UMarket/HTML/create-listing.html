@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Listing - UMarket</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">UMarket</a></h1>
+
+        <nav aria-label="Primary">
+        <ul>
+            <li> <a href="listing.html"> Listing </a> </li>
+            <li> <a href="../../users/profile.html"> Profile </a> </li>
+            <li> <a href="create-listing.html" aria-current="page">Create-listing</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+<main>
+    <section class="create-listing-form">
+        <h2>Create a New Listing</h2>
+        <form action="/listings" method="POST">
+            <label for="title">Item Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter a title" required>
+
+            <label for="price">Price(,max €60)</label>
+            <input type="number" id="price" name="price" max="60" min="0" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Enter a description" required></textarea>
+
+            <label for="image">Photo</label>
+            <input type="file" id="image" name="image" accept="image/*">
+
+            <button type="submit">PostListing</button>
+
+        </form>
+    </section>
+
+
+</main>
+
+<footer>
+    <p>UMarket</p>
+</footer>
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>

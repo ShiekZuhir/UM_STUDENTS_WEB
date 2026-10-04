@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listing - UMarket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+    <h1><a href="index.html">UMarket</a></h1>
+    <!--   These are for the hamburger navigation  -->
+    <input  type="checkbox" id="navToggle" class="nav-toggle"/>
+    <label for="navToggle" class="nav-toggle" aria-label="Toggle navigation">&#9776</label>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="listing.html" aria-current="page">Listing</a></li>
+            <li><a href="users/profile.html">Profile</a></li>
+            <li><a href="create-listing.html">Create Listing</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Listings:</h2>
+
+    <section class="listing-detial">
+        <h4>Item Title</h4>
+        <p class="price">€0</p>
+        <div class="listing-image">...</div>
+        <p class="description"> Item description</p>
+        <p class="seller">Sold by: ...</p>
+        <button> <a href="users/profile.html"> Seller</a></button>
+    </section>
+</main>
+
+<footer>
+    <p>UMarket</p>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+</body>
+</html>
